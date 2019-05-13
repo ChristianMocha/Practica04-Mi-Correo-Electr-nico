@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 if (!$_SESSION['isLogged']) {
     header("Location: ../../../public/controladores/login.php");
 }

@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged']===FALSE) {
-    echo"<scrip>alert('No tiene permiso para ingresar')</scrip>";
+if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE) {
+    echo "<scrip>alert('No tiene permiso para ingresar')</scrip>";
     header("Location: ../../../public/controladores/login.php");
 }
 ?>
@@ -39,29 +39,29 @@ function ConsultarUsuario($codigo)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Practica Hipermedial</title>
-    <link rel="stylesheet" href="../usuario/css/modificar_usuario.css">
-    <link rel="stylesheet" href="../../../public/vista/css/cabecera.css"> 
+    <link rel="stylesheet" href="../admin/css/modificar_usuario.css">
+    <link rel="stylesheet" href="../../../public/vista/css/cabecera.css">
 </head>
 
 <body>
-<header>
+    <header>
         <!--Menu de Navegacion-->
         <div class="ancho">
             <nav>
                 <ul>
-                 
-                  <li><a href="index.php">Modificar</a></li>
-                  <li><a href="../usuario/cerrarSeccion.php">Cerrar Seccion</a></li>
+
+                    <li><a href="index.php">Modificar</a></li>
+                    <li><a href="../admin/cerrarSeccion.php">Cerrar Seccion</a></li>
                 </ul>
             </nav>
-    
+
         </div>
-    
+
     </header>
     <br>
     <br>
     <br>
-    <form action="../usuario/modificar_usuario2.php" method="POST">
+    <form action="../admin/modificar_usuario2.php" method="POST">
         <h2>Creacion de nuevos Usuarios</h2>
         <input type="hidden" name="uso_codigo" value="<?php echo $_GET['usu_codigo'] ?>">
         <input type="text" name="cedula" placeholder="Cedula" value="<?php echo $consulta[0] ?>" required>
