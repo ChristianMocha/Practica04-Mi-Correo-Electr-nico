@@ -1,10 +1,9 @@
-<?php
 
+<?php
 session_start();
-if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE) {
-    echo "<scrip>alert('No tiene permiso para ingresar')</scrip>";
-    header("Location: ../../../public/controladores/login.php");
-}
+if (!isset($_SESSION['isLogin'])) {
+    header("Location: ../../admin/vista/admin/index.php");
+} 
 ?>
 <?php
 

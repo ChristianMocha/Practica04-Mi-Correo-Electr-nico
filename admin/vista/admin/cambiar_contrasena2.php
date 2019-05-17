@@ -1,11 +1,13 @@
 <?php
 session_start();
-if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']===FALSE){
+if (!isset($_SESSION['isLogin'])) {
     header("Location: ../../../public/vista/login.html");
-}
+}elseif ($_SESSION['rol'] == 'user') {
+    header("Location: ../usuario/index.php");
+} 
 ?>
 
-
+<?php
 include '../../../config/conexionBD.php';
 $actual = isset($_POST["actual"]) ? trim($_POST["actual"]) : null;
 $nueva = isset($_POST["nueva"]) ? trim($_POST["nueva"]) : null;
@@ -27,3 +29,4 @@ if (MD5($actual) === $result["usu_password"]) {
         }
     }
 }
+?>
