@@ -6,6 +6,10 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE) {
     header("Location: ../../../public/controladores/login.php");
 }
 ?>
+
+
+
+
 <?php
 include '../../../config/conexionBD.php';
 $cod = isset($_GET["usu_codigo"]) ? trim($_GET["usu_codigo"]) : null;
@@ -18,7 +22,7 @@ if ($cod != null and $delete == true) {
     $sql = "UPDATE usuario SET usu_eliminado='S', usu_fecha_modificacion= '$fecha' WHERE usu_codigo='$cod';";
 
     $result = $conn->query($sql);
-    header("Location: ../usuario/index.php");
+    header("Location: ../admin/index.php");
 } elseif ($cod != null and $delete == false) {
     $sql = "UPDATE usuario SET usu_eliminado='N' WHERE usu_codigo='$cod';";
     $result = $conn->query($sql);

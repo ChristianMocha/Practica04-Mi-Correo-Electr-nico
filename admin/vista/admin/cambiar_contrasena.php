@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (!$_SESSION['isLogged']) {
-    header("Location: ../../../public/controladores/login.php");
+if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged']===FALSE){
+    header("Location: ../../../public/vista/login.html");
 }
 ?>
 

@@ -1,10 +1,16 @@
 
-
 <?php
 session_start();
-if ($_SESSION['isLogged'] == TRUE) {
-    header("Location: ../../admin/vista/usuario/index.php");
-} else {
+if (!isset($_SESSION['isLogin'])) {
+    header("Location: ../../admin/vista/admin/index.php");
+} elseif ($_SESSION['rol'] == 'user') {
+   // header("Location: ../usuario/index.php");
+}
+?>
+
+
+<?php
+
     include '../../config/conexionBD.php';
 
     $usuario = isset($_POST["correo"]) ? trim($_POST["correo"]) : null;
@@ -16,10 +22,10 @@ if ($_SESSION['isLogged'] == TRUE) {
 
     if ($result->num_rows > 0) {
         $_SESSION['isLogged'] = TRUE;
-        header("Location: ../../admin/vista/usuario/index.php");
+        header("Location: ../../admin/vista/admin/index.php");
     } else {
         header("Location: ../vista/login.html");
     }
     $conn->close();
-}
+
 ?>

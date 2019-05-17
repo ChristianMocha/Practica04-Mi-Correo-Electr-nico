@@ -1,8 +1,9 @@
 <?php
-
 session_start();
-if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE) {
-    header("Location: ../../../public/controladores/login.php");
+if (!isset($_SESSION['isLogin'])) {
+    header("Location: ../../../public/vista/login.html");
+} elseif ($_SESSION['rol'] == 'user') {
+   // header("Location: ../usuario/index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -23,8 +24,6 @@ if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE) {
         <div class="ancho">
             <nav>
                 <ul>
-
-
                     <li><a href="../admin/cerrarSeccion.php">Cerrar Seccion</a></li>
                 </ul>
             </nav>
