@@ -28,8 +28,12 @@
 
         </div>
         <div class="imag">
-            <img src="../../../public/vista/img/wallpapers-4k-paisajes.jpg" alt="">
-            <span><label><?php echo ($_SESSION['nom'] . ' ' . $_SESSION['ape']) ?></label></span>
+
+
+                <img src="../../../public/vista/img/wallpapers-4k-paisajes.jpg" alt="">
+                <span><label><?php echo ($_SESSION['nom'] . ' ' . $_SESSION['ape']) ?></label></span>
+
+
         </div>
 
     </header>

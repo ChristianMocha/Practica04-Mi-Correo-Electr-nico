@@ -49,7 +49,7 @@ function ConsultarUsuario($codigo)
             <nav>
                 <ul>
 
-                    <li><a href="index.php">Modificar</a></li>
+                    <li><a href="index.php">Inicio</a></li>
                     <li><a href="../admin/cerrarSeccion.php">Cerrar Seccion</a></li>
                 </ul>
             </nav>

@@ -43,6 +43,7 @@ if (!isset($_SESSION['isLogin'])) {
     )";
     if ($conn->query($sqlInsert) == true) {
         echo "<h1>Mensaje Enviado</h1>";
+        header("Location: ../../usuario/newMessger.php");
     } else {
         echo "<h1>Mensaje No Enviado</h1>";
     }

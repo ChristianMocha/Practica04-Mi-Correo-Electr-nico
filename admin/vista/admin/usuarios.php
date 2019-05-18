@@ -75,7 +75,6 @@ if (!isset($_SESSION['isLogin'])) {
 
                 echo '<td><a href="modificar_usuario.php?usu_codigo=' . $row['usu_codigo'] . '">Modificar Usuario</a></td>';
 
-
                 echo '<td><a href="cambiar_contrasena.php?usu_cod=' . $row["usu_codigo"] . '">Cambiar Contrasena</a></td>';
                 echo "</tr>";
             }

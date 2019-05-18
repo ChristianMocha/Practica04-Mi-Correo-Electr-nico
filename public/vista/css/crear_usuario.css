@@ -12,13 +12,29 @@ body{
     
 }
 form{
-
-    width: 450px;
+    width: 55%;   
+}
+.contenedor{
+    width: 60%;
     margin: auto;
+    display: flex;
     background: rgba(0, 0, 0, .4);
-    padding: 10px 20px;
     margin-top: 20px;
     border-radius: 7px;
+    padding: 10px 20px;
+}
+.foto{
+    margin: auto;
+}
+.foto img{
+    width: 200px;
+    height: 150px;
+    border-radius:5px; 
+}
+.foto input{
+    width: 150px;
+    margin-left:25px;
+
 }
 h2{
     color: #fff;

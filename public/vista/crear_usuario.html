@@ -17,39 +17,49 @@
         <div class="ancho">
             <nav>
                 <ul>
-                  <li><a href="../vista/crear_usuario.html">Crear Usuario</a></li>
-                  <li><a href="../../admin/vista/admin/index.php">Modificar</a></li>
-                  <li><a href="../vista/login.html">Iniciar Sesion</a></li>
+                    <li><a href="../vista/crear_usuario.html">Crear Usuario</a></li>
+                    <li><a href="../../admin/vista/admin/index.php">Modificar</a></li>
+                    <li><a href="../vista/login.html">Iniciar Sesion</a></li>
                 </ul>
             </nav>
-    
+
         </div>
-    
+
     </header>
     <br>
     <br>
     <br>
-    
-    
-    <form action="../controladores/crear_usuario.php" method="POST">
 
-        <h2>Creacion de nuevos Usuarios</h2>
+    <div class="contenedor">
+        <form action="../controladores/crear_usuario.php" method="POST" enctype="multipart/form-data">
 
-        <input type="text" name="cedula" placeholder="Cedula" required>
-        <input type="text" name="nombres" placeholder="Nombre" required>
-        <input type="text" name="apellidos" placeholder="Apellido" required>
-        <input type="text" name="direccion" placeholder="Direccion" required>
-        <input type="text" name="telefono" placeholder="Telefono" required>
-        <input type="email" name="correo" placeholder="Email" required>
-        <input type="date" name="fechaNacimiento" required>
-        <input type="password" name="contrasena" placeholder="Contraseña" >
-        <!-- <input type="password" name="PasswordConf" placeholder="Confirme la contraseña"> -->
-        <input id="boton" type="submit" value="Registrar" required>
+            <h2>Creacion de nuevos Usuarios</h2>
 
-        <!-- <input type="reset" id="cancelar" name="cancelar" value="Cancelar" /> -->
+            <input type="text" name="cedula" placeholder="Cedula" required>
+            <input type="text" name="nombres" placeholder="Nombre" required>
+            <input type="text" name="apellidos" placeholder="Apellido" required>
+            <input type="text" name="direccion" placeholder="Direccion" required>
+            <input type="text" name="telefono" placeholder="Telefono" required>
+            <input type="email" name="correo" placeholder="Email" required>
+            <input type="date" name="fechaNacimiento" required>
+            <input type="password" name="contrasena" placeholder="Contraseña">
+            <!-- <input type="password" name="PasswordConf" placeholder="Confirme la contraseña"> -->
+            <input id="boton" type="submit" value="Registrar" required>
+
+            <!-- <input type="reset" id="cancelar" name="cancelar" value="Cancelar" /> -->
 
 
-    </form>
+        </form>
+        <div class="foto">
+            <img class="perfil" src="../../config/imagenes/sinFoto.jpg" alt="">
+            <br>
+
+                <input class="actualizar" type="file" id="foto" name="foto" value="../../config/images/perfil.jpg" />
+
+           
+        </div>
+    </div>
+
 </body>
 
 </html>
