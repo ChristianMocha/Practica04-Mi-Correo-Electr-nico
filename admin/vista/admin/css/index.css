@@ -51,6 +51,11 @@ table td a{
     text-decoration: none;
     color: #000;  
 }
+table td img{
+    width: 90px;
+    height: 60px;
+}
+
 table td a:hover{
     color: #fff;  
 }

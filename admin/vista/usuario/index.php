@@ -104,14 +104,7 @@ if (!isset($_SESSION['isLogin'])) {
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
 
 
     <footer>
