@@ -36,16 +36,45 @@ if (!isset($_SESSION['isLogin'])) {
         <button>
             <i class="fas fa-search"></i>
         </button>
-        <input type="text" placeholder="Buscar por Remitente">
+        <input type="search" id="buscarRemitente" placeholder="Buscar por remitente" onkeyup="buscar(this)">
     </div>
     <table>
-        <tr>
-            <th>Fecha</th>
-            <th>Remitente</th>
-            <th>Asunto</th>
-            <th></th>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Remitente</th>
+                <th>Asunto</th>
+                <th></th>
 
-        </tr>
+            </tr>
+        </thead>
+
+
+        <tbody id="data">
+                    <?php
+                    include '../../../config/conexionBD.php';
+                    $sql = "SELECT * FROM usuario usu, mensaje msj WHERE usu.usu_codigo=msj.usu_remitente AND 
+                    msj.usu_destino=" . $_SESSION['codigo'] . ";";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $row["mail_fecha"] . "</td>";
+                            echo "<td>" . $row["usu_correo"] . "</td>";
+                            echo "<td>" . $row["mail_asunto"] . "</td>";
+                            echo ('<div id="floatWindow" class="floatWindow"></div>');
+                            echo '<td><a onclick="openWindow(' . $row["mail_codigo"] . ',\'De:\',\'usu_remitente\')">Leer</a></td>';
+                        }
+                    } else {
+                        echo "<tr>";
+                        echo '<td colspan="10" class="db_null"><p>No tienes mensajes recibidos</p><i class="fas fa-exclamation-circle"></i></td>';
+                        echo "</tr>";
+                    }
+                    $conn->close();
+                    ?>
+
+
+                </tbody>
     </table>
 
     <br>

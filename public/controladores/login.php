@@ -27,7 +27,7 @@ if (!isset($_SESSION['isLogin'])) {
         $_SESSION['rol']=$row["rol"];
         $_SESSION['nom']=$row["usu_nombres"];
         $_SESSION['ape']=$row["usu_apellidos"];
-        // $_SESSION['img']=$row["img"];
+        $_SESSION['img']=$row["img"];
         
         header("Location: ../../admin/vista/admin/index.php");
     } else {
