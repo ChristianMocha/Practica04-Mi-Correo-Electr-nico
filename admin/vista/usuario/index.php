@@ -12,9 +12,11 @@ if (!isset($_SESSION['isLogin'])) {
 <head>
     <meta charset="UTF-8">
     <title>Gestión de usuarios</title>
-    <link rel="stylesheet" href="../admin/css/index.css">
+    <link rel="stylesheet" href="../admin/css/index.css"> 
     <link rel="stylesheet" href="../archivos/css/buscar.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="../usuario/js/busca.js"></script>
+
 </head>
 
 <body>
@@ -38,6 +40,7 @@ if (!isset($_SESSION['isLogin'])) {
         </button>
         <input type="search" id="buscarRemitente" placeholder="Buscar por remitente" onkeyup="buscar(this)">
     </div>
+    
     <table>
         <thead>
             <tr>
@@ -72,8 +75,6 @@ if (!isset($_SESSION['isLogin'])) {
                     }
                     $conn->close();
                     ?>
-
-
                 </tbody>
     </table>
 

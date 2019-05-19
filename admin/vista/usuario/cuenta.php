@@ -75,8 +75,8 @@ if (!isset($_SESSION['isLogin'])) {
                         }
                         $user = serialize($row);
                         $user = urlencode($user);
-                        echo '<td><a href="modificar_usuario.php?user=' . $user . '">Modificar</a></td>';
-                        echo '<td><a href="modificar_pass.php?usu_cod=' . $row["usu_codigo"] . '">Cambiar contraseña</a></td>';
+                        echo '<td><a href="modificaCuenta.php?user=' . $user . '">Modificar</a></td>';
+                        echo '<td><a href="modificarPss.php?usu_cod=' . $row["usu_codigo"] . '">Cambiar contraseña</a></td>';
                         echo "</tr>";
                     } else {
                         echo "<tr>";
@@ -96,6 +96,36 @@ if (!isset($_SESSION['isLogin'])) {
         </section>
     </div>
    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
 
     <footer>
         <?php
