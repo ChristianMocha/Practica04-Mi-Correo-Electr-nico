@@ -12,23 +12,24 @@ function buscar(input) {
             document.getElementById("data").innerHTML = this.responseText
         }
     };
-    xmlhttp.open("GET", "../search.php?key=" + text, true)
+    xmlhttp.open("GET", "search.php?key=" + text, true)
     xmlhttp.send()
 }
 function openWindow(id, txt, code) {
     console.log(code)
 
     if (window.XMLHttpRequest) {
-        xmlhttp = new XMLHttpRequest()
+     xmlhttp = new XMLHttpRequest()
     } else {
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
     }
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("floatWindow").innerHTML = this.responseText
         }
+    console.log(txt)
     };
-    xmlhttp.open("GET", "../leerMsj.php?id=" + id + "&dest=" + txt + "&code=" + code, true)
+    xmlhttp.open("GET", "leerMsj.php?id=" + id + "&dest=" + txt + "&code=" + code, true)
     xmlhttp.send()
 
     let windowFloat = document.getElementById("floatWindow")

@@ -53,7 +53,7 @@ if (!isset($_SESSION['isLogin'])) {
 
                 </div>
 
-                <input type="submit" value="Actualizar">
+                <input id="boton" type="submit" value="Actualizar">
             </form>
         </div>
     </section>
