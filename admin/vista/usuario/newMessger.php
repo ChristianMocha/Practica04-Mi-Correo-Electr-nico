@@ -30,14 +30,14 @@ if (!isset($_SESSION['isLogin'])) {
     <br>
 
     <div class="contenedor">
-      
+
         <form action="../controlador/user/newEmail.php" method="POST">
-                <input type="hidden" name="codigoRemitente" value="<?php echo ($_SESSION['codigo']) ?>">
-                <input type="mail" name="emailDestino" id="emailDestino" required placeholder="Destino">
-                <input type="text" name="asunto" id="asunto" value="Prueba">
-                <textarea name="mensaje" id="mensaje" cols="50" rows="20" placeholder="Mensaje"></textarea>
-                <input type="submit" value="Ingresar">
-            </form>
+            <input type="hidden" name="codigoRemitente" value="<?php echo ($_SESSION['codigo']) ?>">
+            <input type="mail" name="emailDestino" id="emailDestino" required placeholder="Destino:">
+            <input type="text" name="asunto" id="asunto" value="" placeholder="Asunto:">
+            <textarea name="mensaje" id="mensaje" cols="50" rows="20" placeholder="Mensaje:"></textarea>
+            <input type="submit" value="Ingresar" id="boton">
+        </form>
 
 
 
@@ -76,6 +76,12 @@ if (!isset($_SESSION['isLogin'])) {
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
     <footer>
         <?php
         include("../archivos/piePagina.php");

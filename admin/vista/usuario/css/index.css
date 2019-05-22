@@ -1,0 +1,21 @@
+body{
+    background: url(../../fotos/imgUser/Germany_Houses_Rivers_492029.jpg);
+    background-position: center;
+    background-attachment: contain; 
+    background-size: cover; 
+    width: 100%;
+
+}
+h1{
+    color: aliceblue;
+}
+table tr{
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+}
+table td a,td{
+    color: aquamarine;
+    font-size: 15px;
+    font-weight: bold;
+}

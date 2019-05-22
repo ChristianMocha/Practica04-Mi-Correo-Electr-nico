@@ -1,0 +1,24 @@
+body {
+    background: url(../../fotos/imgUser/USA_Rivers_Bridges_491975.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    width: 100%;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+table tr {
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table td a,
+td {
+    color: aquamarine;
+    font-size: 20px;
+    font-weight: bold;
+}

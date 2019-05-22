@@ -13,9 +13,16 @@ $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 
 echo ('<div class="window">
+    <div class="btn">
+        <button onclick="cluseWindow()" >
+        <i class="far fa-window-close"></i>
+        </button>
+    </div>
+ 
     <p><span>' . $_GET['dest'] . '  </span>' . $row["usu_correo"] . '</p>
-    <p><span>Asunto: </span>' . $row["mail_asunto"] . '</p>
+    <p ><span>Asunto: </span>' . $row["mail_asunto"] . '</p>
     <p class="msj">' . $row["mail_mensaje"] . '</p>
-    <input type="button" value="Cerrar" onclick="cluseWindow()">
+    
 </div>');
+//   <input type="button" value="Cerrar" onclick="cluseWindow()">
 ?> 

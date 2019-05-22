@@ -1,0 +1,35 @@
+ body {
+    background: url(../../fotos/imgUser/United_Kingdom_Roads_Sunrises_and_sunsets_Mam_Tor_535552_1280x853.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: rale;
+    letter-spacing: 2px;
+ }
+
+ h1 {
+    color: aliceblue;
+ }
+
+ table tr {
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ table td a, td {
+    color: aquamarine;
+    font-size: 10px;
+    font-weight: bold;
+ }
+
+ table td a {
+    color: aliceblue;
+    font-size: 20px;
+ }
+
+ @font-face {
+    font-family: rale;
+    src: url(../../../../fuentes/Raleway-Regular.ttf)
+ }

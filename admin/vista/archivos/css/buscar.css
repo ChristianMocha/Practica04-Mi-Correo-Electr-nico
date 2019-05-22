@@ -10,6 +10,8 @@
     border: 1px solid;
     display: flex;
     justify-content: right;
+    margin-left: 10px;
+
 }
 .buscar button{
     width: 50px;

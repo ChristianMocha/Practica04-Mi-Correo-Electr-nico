@@ -14,6 +14,7 @@ if (!isset($_SESSION['isLogin'])) {
     <title>Gestión de usuarios</title>
     <link rel="stylesheet" href="../admin/css/index.css">
     <link rel="stylesheet" href="../../../public/vista/css/cabecera.css">
+    <link rel="stylesheet" href="../usuario/css/index.css">
 </head>
 
 <body>

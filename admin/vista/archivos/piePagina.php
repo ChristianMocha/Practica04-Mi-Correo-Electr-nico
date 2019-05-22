@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,16 +11,16 @@
 
 <body>
     <footer>
-        <div class="piePagina">
-            <div class="container-footer">
-                <div class="copi">
-                    <label>&copy; Copyright</label>
-                    <label> Christian Ronaldo Mocha Zhingri </label>
-                    <label> 2019 </label>
-                </div>
-            </div>
 
-        </div>
+
+
+            <label>&copy; Copyright</label>
+            <label> Christian Ronaldo Mocha Zhingri </label>
+            <label> 2019 </label>
+
+
+
+
 
     </footer>
 </body>

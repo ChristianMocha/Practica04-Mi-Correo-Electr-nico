@@ -1,10 +1,84 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: rale;
-    
+    letter-spacing: 2px;
 }
-.contenedor{
-    background: red;
+
+body {
+    background: url(../../fotos/imgUser/Scenery_Mountains_The_494992.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.contenedor {
+    top: 200px;
+    position: absolute;
+    margin-left: 30%;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, .4);
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    border: none;
+    font-family: rale;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    border: 0;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.0);
+    border-bottom: solid 1px #fff;
+    color: #fff;
+    transition: all 200ms ease;
+}
+
+#boton:hover {
+    width: 120%;
+    margin-left: -10%;
+    cursor: pointer;
+}
+
+#boton:active {
+    background-color: rgba(255, 255, 255, .2);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+#boton:focus {
+    background-color: rgba(255, 255, 255, .2);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: rale;
+    src: url(../../../../fuentes/Raleway-Regular.ttf)
 }

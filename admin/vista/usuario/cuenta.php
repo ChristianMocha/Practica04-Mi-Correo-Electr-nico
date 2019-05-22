@@ -12,8 +12,8 @@ if (!isset($_SESSION['isLogin'])) {
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../../css/style.css">
-    <link rel="stylesheet" href="../../../css/admin_style.css">
+
+    <link rel="stylesheet" href="../usuario/css/cuenta.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="../admin/css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -33,7 +33,7 @@ if (!isset($_SESSION['isLogin'])) {
     <br>
     <br>
     <div id="contenedor">
-        <h2>Mi Cuenta</h2>
+        <h1>Mi Cuenta</h1>
         <section>
             <table>
                 <thead>
@@ -124,7 +124,11 @@ if (!isset($_SESSION['isLogin'])) {
     <br>
     <br>
     <br>
+    <br>
+    <br>
 
+
+  
 
 
     <footer>

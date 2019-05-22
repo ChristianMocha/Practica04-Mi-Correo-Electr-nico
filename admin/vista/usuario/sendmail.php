@@ -12,9 +12,11 @@ if (!isset($_SESSION['isLogin'])) {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../admin/css/index.css">
+    <link rel="stylesheet" href="../usuario/css/sendmail.css">
+
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="js/search.js"></script>
+    <script src="../usuario/js/busca.js"></script>
     <title>Mensajes enviados</title>
 </head>
 
@@ -43,7 +45,7 @@ if (!isset($_SESSION['isLogin'])) {
                         <th></th>
                     </tr>
                 </thead>
-            
+
                 <tbody>
                     <?php
                     include '../../../config/conexionBD.php';
@@ -100,6 +102,10 @@ if (!isset($_SESSION['isLogin'])) {
     <br>
     <br>
     <br>
+    <br>
+    <br>
+
+
 
 
 
