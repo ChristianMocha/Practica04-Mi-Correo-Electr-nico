@@ -76,18 +76,46 @@ g)  Buscar todos los mensajes electrónicos recibidos. La búsqueda se realizar�
 <img width="542" alt="Captura de Pantalla 2019-05-23 a la(s) 12 56 17 a  m" src="https://user-images.githubusercontent.com/34308608/58228850-962eec00-7cf5-11e9-961e-272c9017a400.png">
 
 
+<img width="540" alt="Captura de Pantalla 2019-05-23 a la(s) 12 56 37 a  m" src="https://user-images.githubusercontent.com/34308608/58228869-a34bdb00-7cf5-11e9-93a7-1cce531f1e0b.png">
 
 
 h)  Buscar todos los mensajes electrónicos enviados. La búsqueda se realizará por el 
 correo del usuario destinatario y se deberá aplicar Ajax para la búsqueda. 
 
+<img width="543" alt="Captura de Pantalla 2019-05-23 a la(s) 12 59 39 a  m" src="https://user-images.githubusercontent.com/34308608/58229003-0c335300-7cf6-11e9-949f-72d6476bfc62.png">
 
-<img width="540" alt="Captura de Pantalla 2019-05-23 a la(s) 12 56 37 a  m" src="https://user-images.githubusercontent.com/34308608/58228869-a34bdb00-7cf5-11e9-93a7-1cce531f1e0b.png">
-
-
-
+i)  Modificar los datos del usuario. 
 
 
+<img width="542" alt="Captura de Pantalla 2019-05-23 a la(s) 1 00 17 a  m" src="https://user-images.githubusercontent.com/34308608/58229025-22d9aa00-7cf6-11e9-8b03-87f3da737e47.png">
 
+<img width="541" alt="Captura de Pantalla 2019-05-23 a la(s) 1 00 30 a  m" src="https://user-images.githubusercontent.com/34308608/58229040-2b31e500-7cf6-11e9-8be6-b4f5688b01b8.png">
+
+
+MODIFICADO:
+
+<img width="543" alt="Captura de Pantalla 2019-05-23 a la(s) 1 00 56 a  m" src="https://user-images.githubusercontent.com/34308608/58229061-3be25b00-7cf6-11e9-9a73-1eff1daa257d.png">
+
+
+j)  Cambiar la contraseña del usuario. 
+
+<img width="545" alt="Captura de Pantalla 2019-05-23 a la(s) 1 01 37 a  m" src="https://user-images.githubusercontent.com/34308608/58229091-53214880-7cf6-11e9-92a7-cd691d887023.png">
+
+<img width="543" alt="Captura de Pantalla 2019-05-23 a la(s) 1 02 06 a  m" src="https://user-images.githubusercontent.com/34308608/58229110-659b8200-7cf6-11e9-909d-0546e2582105.png">
+
+
+
+
+
+k)  Agregar un avatar (fotografía) a la cuenta del usuario. 
+
+<img width="542" alt="Captura de Pantalla 2019-05-23 a la(s) 1 03 02 a  m" src="https://user-images.githubusercontent.com/34308608/58229152-849a1400-7cf6-11e9-93af-7f7907f19af9.png">
+
+3. 
+Usuario con rol de admin: 
+l) No puede recibir ni enviar mensajes electrónicos. 
+
+
+<img width="543" alt="Captura de Pantalla 2019-05-23 a la(s) 1 02 26 a  m" src="https://user-images.githubusercontent.com/34308608/58229118-70561700-7cf6-11e9-957f-3dae8fb95e6c.png">
 
 
