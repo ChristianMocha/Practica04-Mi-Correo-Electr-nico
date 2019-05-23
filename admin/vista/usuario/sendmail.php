@@ -13,7 +13,7 @@ if (!isset($_SESSION['isLogin'])) {
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../admin/css/index.css">
     <link rel="stylesheet" href="../usuario/css/sendmail.css">
-
+    <link rel="stylesheet" href="../archivos/css/buscar.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="../usuario/js/busca.js"></script>
@@ -32,6 +32,12 @@ if (!isset($_SESSION['isLogin'])) {
     <br>
     <div id="contenedor">
         <h2>Mensajes Enviados</h2>
+        <div class="buscar">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="search" id="buscarRemitente" placeholder="Buscar por remitente" onkeyup="buscar(this, 2)">
+        </div>
         <section>
             <!-- <div class="buscar">
                 <input type="search" placeholder="Buscar">
@@ -46,7 +52,7 @@ if (!isset($_SESSION['isLogin'])) {
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody id="data">
                     <?php
                     include '../../../config/conexionBD.php';
                     $sql = "SELECT * FROM usuario usu, mensaje msj WHERE usu.usu_codigo=msj.usu_destino AND 

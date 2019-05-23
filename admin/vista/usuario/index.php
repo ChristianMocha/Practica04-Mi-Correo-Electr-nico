@@ -39,7 +39,7 @@ if (!isset($_SESSION['isLogin'])) {
         <button>
             <i class="fas fa-search"></i>
         </button>
-        <input type="search" id="buscarRemitente" placeholder="Buscar por remitente" onkeyup="buscar(this)">
+        <input type="search" id="buscarRemitente" placeholder="Buscar por remitente" onkeyup="buscar(this, 1)">
     </div>
 
     <table>

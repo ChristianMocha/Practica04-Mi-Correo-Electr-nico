@@ -1,4 +1,4 @@
-function buscar(input) {
+function buscar(input, varr ) {
     console.log("entro al metodo")
     let text = input.value.trim()
     //console.log(text)
@@ -11,9 +11,17 @@ function buscar(input) {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("data").innerHTML = this.responseText
         }
+
     };
-    xmlhttp.open("GET", "search.php?key=" + text, true)
-    xmlhttp.send()
+    if(varr==1){
+        xmlhttp.open("GET", "search.php?key=" + text, true)
+        xmlhttp.send()
+    }
+    else{
+        xmlhttp.open("GET", "search1.php?key=" + text, true)
+        xmlhttp.send()
+    }
+  
 }
 function openWindow(id, txt, code) {
     console.log(code)

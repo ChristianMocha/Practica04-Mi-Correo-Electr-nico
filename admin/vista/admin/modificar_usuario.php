@@ -1,9 +1,8 @@
-
 <?php
 session_start();
 if (!isset($_SESSION['isLogin'])) {
     header("Location: ../../admin/vista/admin/index.php");
-} 
+}
 ?>
 <?php
 
@@ -43,20 +42,9 @@ function ConsultarUsuario($codigo)
 </head>
 
 <body>
-    <header>
-        <!--Menu de Navegacion-->
-        <div class="ancho">
-            <nav>
-                <ul>
-
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="../admin/cerrarSeccion.php">Cerrar Seccion</a></li>
-                </ul>
-            </nav>
-
-        </div>
-
-    </header>
+    <?php
+    include("../archivos/cabeAdmin.php")
+    ?>
     <br>
     <br>
     <br>
