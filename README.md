@@ -109,13 +109,104 @@ j)  Cambiar la contraseña del usuario.
 
 k)  Agregar un avatar (fotografía) a la cuenta del usuario. 
 
-<img width="542" alt="Captura de Pantalla 2019-05-23 a la(s) 1 03 02 a  m" src="https://user-images.githubusercontent.com/34308608/58229152-849a1400-7cf6-11e9-93af-7f7907f19af9.png">
+<img width="543" alt="Captura de Pantalla 2019-05-23 a la(s) 1 02 26 a  m" src="https://user-images.githubusercontent.com/34308608/58229118-70561700-7cf6-11e9-957f-3dae8fb95e6c.png">
 
 3. 
 Usuario con rol de admin: 
 l) No puede recibir ni enviar mensajes electrónicos. 
+<img width="542" alt="Captura de Pantalla 2019-05-23 a la(s) 1 03 02 a  m" src="https://user-images.githubusercontent.com/34308608/58229152-849a1400-7cf6-11e9-93af-7f7907f19af9.png">
 
 
-<img width="543" alt="Captura de Pantalla 2019-05-23 a la(s) 1 02 26 a  m" src="https://user-images.githubusercontent.com/34308608/58229118-70561700-7cf6-11e9-957f-3dae8fb95e6c.png">
+m)  Visualizar en su pagina principal (index.php) el listado de todos los mensajes electrónicos, ordenados por los más recientes. 
+
+
+<img width="541" alt="Captura de Pantalla 2019-05-23 a la(s) 1 05 29 a  m" src="https://user-images.githubusercontent.com/34308608/58229277-dc387f80-7cf6-11e9-82a5-e96764e5b50f.png">
+
+
+n)  Eliminar los mensajes electrónicos de los usuarios con rol “user”. 
+<img width="543" alt="Captura de Pantalla 2019-05-23 a la(s) 1 05 46 a  m" src="https://user-images.githubusercontent.com/34308608/58229298-ec505f00-7cf6-11e9-8bda-dc0f4360e2c2.png">
+
+
+ELIMINADO:
+
+
+<img width="543" alt="Captura de Pantalla 2019-05-23 a la(s) 1 06 17 a  m" src="https://user-images.githubusercontent.com/34308608/58229310-fa05e480-7cf6-11e9-994f-615e4a3afc18.png">
+
+
+
+o)  Eliminar, modificar y cambiar contraseña de los usuarios con rol “user”. 
+- Eliminar
+
+
+<img width="544" alt="Captura de Pantalla 2019-05-23 a la(s) 1 06 56 a  m" src="https://user-images.githubusercontent.com/34308608/58229339-1013a500-7cf7-11e9-9352-7b8f15ab77e9.png">
+
+-	Modificar
+
+
+<img width="546" alt="Captura de Pantalla 2019-05-23 a la(s) 1 07 49 a  m" src="https://user-images.githubusercontent.com/34308608/58229369-2faacd80-7cf7-11e9-81c5-ea6780cf4eed.png">
+
+
+
+-	Cambiar contraseña de los usuarios con rol “user”
+
+<img width="540" alt="Captura de Pantalla 2019-05-23 a la(s) 1 08 48 a  m" src="https://user-images.githubusercontent.com/34308608/58229418-536e1380-7cf7-11e9-9255-0fa91cbe418d.png">
+
+
+
+4. 
+Por último, se debe aplicar parámetros de seguridad a través del uso de sesiones. Para lo cuál, se debe tener en cuenta: 
+
+  p)  Un usuario “anónimo”, es decir, un usuario que no ha iniciado sesión puede acceder  únicamente a los archivos de la carpeta pública. 
+  
+  
+  <img width="535" alt="Captura de Pantalla 2019-05-23 a la(s) 1 10 12 a  m" src="https://user-images.githubusercontent.com/34308608/58229493-857f7580-7cf7-11e9-8065-a3e2d5f3352d.png">
+  
+  
+  q)  Un usuario con rol de “admin” puede acceder únicamente a los archivos de la carpeta admin → vista → admin y admin → controladores → admin 
+
+<img width="357" alt="Captura de Pantalla 2019-05-23 a la(s) 1 10 43 a  m" src="https://user-images.githubusercontent.com/34308608/58229537-9f20bd00-7cf7-11e9-9318-f216a16b8f83.png">
+
+r) Un usuario con rol de “user” puede acceder únicamente a los archivos de la carpeta admin → vista → user y admin → controladores → user 
+
+
+
+<img width="368" alt="Captura de Pantalla 2019-05-23 a la(s) 1 11 36 a  m" src="https://user-images.githubusercontent.com/34308608/58229577-b8c20480-7cf7-11e9-90be-f7e2e04440bd.png">
+
+
+
+6. 
+Crear un repositorio en GitHub con el nombre “Practica04 – Mi Correo Electrónico” 
+<img width="542" alt="Captura de Pantalla 2019-05-23 a la(s) 1 12 01 a  m" src="https://user-images.githubusercontent.com/34308608/58229600-c6778a00-7cf7-11e9-949c-445c4223fffb.png">
+
+
+
+7. 
+Realizar un commit y push por cada requerimiento de los puntos antes descritos. 
+
+
+1.	El diagrama E-R de la solución propuesta. 
+
+
+
+2.	Nombre de la base de datos 
+
+<img width="540" alt="Captura de Pantalla 2019-05-23 a la(s) 1 13 05 a  m" src="https://user-images.githubusercontent.com/34308608/58229662-ec049380-7cf7-11e9-94f4-332cb0ecafea.png">
+
+
+3.	Sentencias SQL de la estructura de la base de datos
+
+<img width="539" alt="Captura de Pantalla 2019-05-23 a la(s) 1 13 33 a  m" src="https://user-images.githubusercontent.com/34308608/58229688-fcb50980-7cf7-11e9-8669-4f59a1f99a45.png">
+
+
+<img width="544" alt="Captura de Pantalla 2019-05-23 a la(s) 1 13 45 a  m" src="https://user-images.githubusercontent.com/34308608/58229698-03dc1780-7cf8-11e9-9abe-6c2eb36f9036.png">
+
+
+
+4.	La evidencia del correcto diseño de las páginas HTML usando CSS. Para lo cuál, se puede generar fotografías instantáneas (pantallazos).
+
+<img width="273" alt="Captura de Pantalla 2019-05-23 a la(s) 1 14 13 a  m" src="https://user-images.githubusercontent.com/34308608/58229724-148c8d80-7cf8-11e9-96e8-7a4a760f2084.png">
+
+<img width="538" alt="Captura de Pantalla 2019-05-23 a la(s) 1 14 23 a  m" src="https://user-images.githubusercontent.com/34308608/58229737-1a826e80-7cf8-11e9-84fd-c05ff0b8c070.png">
+
 
 
