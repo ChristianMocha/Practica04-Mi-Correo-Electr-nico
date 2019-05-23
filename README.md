@@ -35,9 +35,55 @@ Iniciamos sesión como administrador
 <img width="741" alt="Captura de Pantalla 2019-05-23 a la(s) 12 50 17 a  m" src="https://user-images.githubusercontent.com/34308608/58228565-bd38ee00-7cf4-11e9-90fe-b724659d3f21.png">
 
 
-
-
 c)  Los usuarios con rol de “user” pueden modificar, eliminar y cambiar la contraseña de su usuario. 
+
+<img width="742" alt="Captura de Pantalla 2019-05-23 a la(s) 12 50 43 a  m" src="https://user-images.githubusercontent.com/34308608/58228605-db065300-7cf4-11e9-8b34-9832695c8e5d.png">
+
+
+
+-	Modificar 
+
+<img width="539" alt="Captura de Pantalla 2019-05-23 a la(s) 12 52 43 a  m" src="https://user-images.githubusercontent.com/34308608/58228682-143ec300-7cf5-11e9-83a3-aca7df31ffa0.png">
+
+-	 Eliminar
+
+<img width="541" alt="Captura de Pantalla 2019-05-23 a la(s) 12 53 01 a  m" src="https://user-images.githubusercontent.com/34308608/58228722-32a4be80-7cf5-11e9-898d-1e2b9720f382.png">
+
+-	Cambiar la contraseña
+
+<img width="540" alt="Captura de Pantalla 2019-05-23 a la(s) 12 53 59 a  m" src="https://user-images.githubusercontent.com/34308608/58228736-42bc9e00-7cf5-11e9-9c4b-ed1c761396fc.png">
+
+
+Luego, con base a estos ajustes realizados, se pide desarrollar una aplicación web usando PHP y Base de Datos que permita gestionar (enviar y recibir) mensajes electrónicos entre usuarios de la aplicación. De los mensajes electrónicos se desea conocer la fecha y hora, remitente, destinatario, asunto y mensaje. Para lo cuál, se pide como mínimo los siguientes requerimientos: 
+
+Usuario con rol de user: 
+
+  d) Visualizar en su pagina principal (index.php) el listado de todos los mensajes electrónicos recibidos, ordenados por los           más recientes. 
+  
+  <img width="539" alt="Captura de Pantalla 2019-05-23 a la(s) 12 54 53 a  m" src="https://user-images.githubusercontent.com/34308608/58228776-61bb3000-7cf5-11e9-8230-bc0672840676.png">
+  
+e)  Visualizar el  listado de todos los mensajes electrónicos enviados, ordenados por los más recientes. 
+
+<img width="540" alt="Captura de Pantalla 2019-05-23 a la(s) 12 55 19 a  m" src="https://user-images.githubusercontent.com/34308608/58228796-713a7900-7cf5-11e9-8944-095cd9cd6bd4.png">
+
+
+f)  Enviar mensajes electrónicos a otros usuarios de la aplicación web. 
+
+<img width="545" alt="Captura de Pantalla 2019-05-23 a la(s) 12 56 00 a  m" src="https://user-images.githubusercontent.com/34308608/58228834-8911fd00-7cf5-11e9-8ee9-a6c7a911c64e.png">
+
+g)  Buscar todos los mensajes electrónicos recibidos. La búsqueda se realizará por el correo del usuario remitente y se deberá aplicar Ajax para la búsqueda. 
+
+<img width="542" alt="Captura de Pantalla 2019-05-23 a la(s) 12 56 17 a  m" src="https://user-images.githubusercontent.com/34308608/58228850-962eec00-7cf5-11e9-961e-272c9017a400.png">
+
+
+
+
+h)  Buscar todos los mensajes electrónicos enviados. La búsqueda se realizará por el 
+correo del usuario destinatario y se deberá aplicar Ajax para la búsqueda. 
+
+
+<img width="540" alt="Captura de Pantalla 2019-05-23 a la(s) 12 56 37 a  m" src="https://user-images.githubusercontent.com/34308608/58228869-a34bdb00-7cf5-11e9-93a7-1cce531f1e0b.png">
+
 
 
 
