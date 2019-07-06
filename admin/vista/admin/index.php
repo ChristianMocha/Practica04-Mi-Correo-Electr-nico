@@ -2,7 +2,13 @@
 session_start();
 if (!isset($_SESSION['isLogin'])) {
     header("Location: ../../../public/vista/login.html");
-}elseif ($_SESSION['rol'] == 'user') {
+}
+
+
+
+
+
+elseif ($_SESSION['rol'] == 'user') {
     header("Location: ../usuario/index.php");
 } 
 ?>

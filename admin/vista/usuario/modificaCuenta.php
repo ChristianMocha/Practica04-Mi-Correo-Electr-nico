@@ -47,7 +47,7 @@ if (!isset($_SESSION['isLogin'])) {
 
                 <div class="foto">
 
-                <img src="<?php echo ('../../../img/fotos/' . $_SESSION["codigo"] . '/' . $_SESSION["img"]) ?>" alt="">
+                    <img src="<?php echo ('../../../img/fotos/' . $_SESSION["codigo"] . '/' . $_SESSION["img"]) ?>" alt="">
                     <br>
                     <input type="file" name="foto" id="foto">
 
